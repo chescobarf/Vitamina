@@ -18,42 +18,70 @@
             <a href="index.html"><img src="./img/svg/vitamina_logo-1.svg" alt=""></a>
         </div>
         <div class="item">
-            <a href="pageIntern.html" class="txtMedium">
+            <a href="nuestro-servicio.html" class="txtMedium">
                 Nuestro servicio
             </a>
         </div>
         <div class="item">
-            <a href="pageIntern.html" class="txtMedium">
+            <a href="quienes-somos.html" class="txtMedium">
                 Quienes somos
             </a>
         </div>
         <div class="item">
-            <a href="pageIntern.html" class="txtMedium">
+            <a href="como-educamos.html" class="txtMedium">
                 Cómo educamos
             </a>
         </div>
         <div class="item">
-            <a href="pageIntern.html" class="txtMedium">
+            <a href="donde-estamos.html" class="txtMedium">
                 Dónde estamos
             </a>
         </div>
         <div class="item">
-            <a href="" class="txtMedium">
+            <a href="contacto.html" class="txtMedium">
                 Contacto
             </a>
         </div>
-        <div class="item">
-            <a href="">
+        <div class="item item-search">
+            <a class="search">
                 <img src="./img/svg/search.svg" alt="">
             </a>
+            <div class="buscador">
+                <input type="text" placeholder="¿Qué necesitas?">
+            </div>
         </div>
+
     </header>
-    <div class="fixed-menu">
+
+    <!-- <div class="fixed-menu" style="display: none;">
         <div class="headerMobile">
-            <div class="item logo"><a href="#"><img src="./img/svg/vitamina_logo-1.svg" alt=""></a></div>
-            <div class="item"><a href="contacto.html"><img src="./img/svg/contact.svg" alt=""></a></div>
-            <div class="item"><a href="#"><img src="./img/svg/location.svg" alt=""></a></div>
+            <div class="item logo"><a href="index.html"><img src="./img/svg/vitamina_logo-1.svg" alt=""></a></div>
+            <div class="item"><a href="contacto.html"><img src="./img/svg/mail.svg" alt=""></a></div>
+            <div class="item"><a href="donde-estamos.html"><img src="./img/svg/location.svg" alt=""></a></div>
             <div class="item menuHamburguer"><a href="#"><img src="./img/svg/menu.svg" alt=""></a></div>
+        </div>
+    </div> -->
+    <div style="display: flex; justify-content: space-between; align-items: center;" class="hiddenDesktop">
+        <div>
+            <a href="index.html">
+                <img src="./img/svg/vitamina_logo-1.svg" alt=""
+                    style="height: 60px;margin-top: 0px;padding-top: 30px;margin-left: 10px;">
+            </a>
+        </div>
+        <div style="display: flex;gap: 18px;margin-right: 10px;">
+            <a href="contacto.html">
+                <img src="./img/svg/mail.svg" alt="">
+            </a>
+            <div>
+                <a href="donde-estamos.html">
+                    <img src="./img/svg/location.svg" alt="">
+                </a>
+            </div>
+            <div class="item menuHamburguer">
+                <a href="#">
+                    <img src="./img/svg/menu.svg" alt="">
+                </a>
+            </div>
         </div>
     </div>
     <!--Menu Movil  -->
@@ -65,73 +93,34 @@
                     <span>Nuestro servicio</span>
                     <ul>
                         <li>
-                            <a href="pageIntern.html">Para Familias</a>
+                            <a href="nuestro-servicio.html">Para Familias</a>
                         </li>
                         <li>
-                            <a href="pageIntern.html">Para Las Empresas</a>
+                            <a href="nuestro-servicio.html">Para Las Empresas</a>
                         </li>
                         <li>
-                            <a href="pageIntern.html">Para Las Educadoras</a>
+                            <a href="nuestro-servicio.html">Para Las Educadoras</a>
                         </li>
                     </ul>
                 </li>
             </label>
         </div>
         <div class="item">
-            <a href="contacto.html">Quienes Somos</a>
+            <a href="quienes-somos.html">Quienes Somos</a>
+        </div>
+
+        <div class="item">
+            <a href="donde-estamos.html">Dónde estamos</a>
         </div>
         <div class="item">
-            <a href="pageIntern.html">Cómo educamos</a>
+            <a href="contacto.html">CONTÁCTANOS</a>
         </div>
-        <div class="item">
-            <label for="dropdown2">
-                <li class="title-dropdown">
-                    <input type="checkbox" id="dropdown2" class="dropdown">
-                    <span> Dónde estamos</span>
-                    <ul>
-                        <li>
-                            <a href="">Chile</a>
-                        </li>
-                        <li>
-                            <a href="">Brazil</a>
-                        </li>
-                        <li>
-                            <a href="">Peru</a>
-                        </li>
-                        <li>
-                            <a href="">Colombia</a>
-                        </li>
-                    </ul>
-                </li>
-            </label>
-        </div>
-        <div class="item">
-            <label for="dropdown3">
-                <li class="title-dropdown">
-                    <input type="checkbox" id="dropdown3" class="dropdown">
-                    <span>CONTÁCTANOS</span>
-                    <ul>
-                        <li>
-                            <a href="">lorem</a>
-                        </li>
-                        <li>
-                            <a href="">lorem</a>
-                        </li>
-                        <li>
-                            <a href="">lorem</a>
-                        </li>
-                    </ul>
-                </li>
-            </label>
-        </div>
-        <div class="item">
-            <a href="https://vitamina.com">Ir a vitamina.com</a>
-        </div>
+
         <!-- End Menu Movil  -->
     </div>
     <!--END HEADER  -->
     <!-- CARROUSEL 1 -->
-    <div class="heroCarrousel">
+    <div class="heroCarrousel" style="margin-top: 0;">
         <div class="sliderHero">
             <div class="item">
                 <img src="./img/jardin-infantil-vitamina.jpg" alt="">
@@ -163,7 +152,7 @@
             <div class="grillaCards">
                 <div class="card">
                     <figure class="imagen">
-                        <img src="./img/whiteBox.png" alt="">
+                        <img src="./img/familia.jpg" alt="">
                     </figure>
                     <div class="titulo">
                         <h2 class="orange">Para Familias.</h2>
@@ -179,15 +168,14 @@
                 </div>
                 <div class="card">
                     <figure class="imagen">
-                        <img src="./img/whiteBox.png" alt="">
+                        <img src="./img/empresas.jpg" alt="">
                     </figure>
                     <div class="titulo">
                         <h2 class="blue">Para Empresas.</h2>
                     </div>
                     <div class="texto">
-                        <p class="txtLight">Cuidado y educación para niños de 0 a 5 años de edad, con horarios
-                            extendidos en 65 centros
-                            con las mejores ubicaciones.</p>
+                        <p class="txtLight">Beneficios para tus colaboradores, mejorando su calidad de vida y así la
+                            productividad de tus equipos de trabajo.</p>
                     </div>
                     <div class="boton">
                         <a href="" class="btn bg-blue">Conocer más</a>
@@ -195,17 +183,16 @@
                 </div>
                 <div class="card">
                     <figure class="imagen">
-                        <img src="./img/whiteBox.png" alt="">
+                        <img src="./img/educadoras.png" alt="">
                     </figure>
                     <div class="card-content">
                         <div class="titulo">
                             <h2 class="green">Para Educadoras.</h2>
                         </div>
                         <div class="texto">
-                            <p class="txtLight">Cuidado y educación para niños de 0 a 5 años de edad, con horarios
-                                extendidos en 65
-                                centros
-                                con las mejores ubicaciones.</p>
+                            <p class="txtLight">Oportunidad de transformar la educación parvularia, ser parte de un
+                                proyecto innovador con posibilidad de desarrollo, formación permanente y crecimiento
+                                profesional.</p>
                         </div>
                         <div class="boton">
                             <a href="" class="btn bg-green">Conocer más</a>
@@ -227,7 +214,7 @@
                 </figure>
                 <div class="card-content">
                     <div class="titulo">
-                        <h2 class="txtLight orange">Niños y familias <b class="txtBold">crecen mejor en Vitamina</b>
+                        <h2 class="txtLight">Niños y familias <b class="txtBold">crecen mejor en Vitamina</b>
                         </h2>
                     </div>
                     <div class="texto">
@@ -277,19 +264,20 @@
                 <div class="cardHorizontal">
                     <a href="">
                         <figure>
-                            <img src="./img/Mini-Rectangle.png" alt="">
+                            <img src="https://www.vitamina.cl/wp-content/uploads/2020/03/LO-GALLO_216.jpg" alt="">
                         </figure>
                         <div class="contenido">
                             <div class="title">
                                 <h3 class="orange txtMedium">
-                                    Educación parvularia de cálidad
+                                    Educación parvularia de calidad
                                 </h3>
+                                <img class="hiddenDesktop" src="./img/svg/arrowOrange.svg" alt="" srcset="">
                             </div>
                             <div class="descripcion hiddenMobile">
                                 <p class="txtLight">
                                     Tenemos un programa educativo único, que potencia los talentos de los niños e
-                                    incentiva
-                                    la creatividad.
+                                    incentiva la creatividad. Nuestros espacios han sido especialmente diseñados para
+                                    favorecer su desarrollo a través del juego y la autonomía.
                                 </p>
                             </div>
                         </div>
@@ -298,12 +286,14 @@
                 <div class="cardHorizontal">
                     <a href="">
                         <figure>
-                            <img src="./img/Mini-Rectangle.png" alt="">
+                            <img src="https://www.vitamina.cl/wp-content/uploads/2019/10/Jardin-Vitamina-Nivel-Jardin-Infantil.png"
+                                alt="">
                         </figure>
                         <div class="contenido">
                             <div class="title">
                                 <h3 class="orange txtMedium">
-                                    Ambiente Cálido y Acogedor </h3>
+                                    Ambiente cálido y acogedor </h3>
+                                <img class="hiddenDesktop" src="./img/svg/arrowOrange.svg" alt="">
                             </div>
                             <div class="descripcion hiddenMobile">
                                 <p class="txtLight">
@@ -318,18 +308,20 @@
                 <div class="cardHorizontal">
                     <a href="">
                         <figure>
-                            <img src="./img/Mini-Rectangle.png" alt="">
+                            <img src="https://www.vitamina.cl/wp-content/uploads/2018/11/seguridad-vitamina-evacuacion.jpg"
+                                alt="">
                         </figure>
                         <div class="contenido">
                             <div class="title">
                                 <h3 class="orange txtMedium">
                                     Seguridad, un pilar fundamental </h3>
+                                <img class="hiddenDesktop" src="./img/svg/arrowOrange.svg" alt="" srcset="">
                             </div>
                             <div class="descripcion hiddenMobile">
                                 <p class="txtLight">
                                     Contamos con los más altos estándares internacionales en términos de protocolos e
                                     infraestructura enfocados en prevenir o atender situaciones de riesgo que puedan
-                                    afectar el bienestar y seguridad infantil..
+                                    afectar el bienestar y seguridad infantil.
                                 </p>
                             </div>
                         </div>
@@ -338,12 +330,13 @@
                 <div class="cardHorizontal">
                     <a href="">
                         <figure>
-                            <img src="./img/Mini-Rectangle.png" alt="">
+                            <img src="https://www.vitamina.cl/wp-content/uploads/2018/10/seguridad.jpg" alt="">
                         </figure>
                         <div class="contenido">
                             <div class="title">
                                 <h3 class="orange txtMedium">
                                     Infraestructura de nivel mundial </h3>
+                                <img class="hiddenDesktop" src="./img/svg/arrowOrange.svg" alt="" srcset="">
                             </div>
                             <div class="descripcion hiddenMobile">
                                 <p class="txtLight">
@@ -358,12 +351,13 @@
                 <div class="cardHorizontal">
                     <a href="">
                         <figure>
-                            <img src="./img/Mini-Rectangle.png" alt="">
+                            <img src="https://www.vitamina.cl/wp-content/uploads/2018/05/RSN2015_K9C2650.jpg" alt="">
                         </figure>
                         <div class="contenido">
                             <div class="title">
                                 <h3 class="orange txtMedium">
-                                    Alimentación saludable </h3>
+                                    Alimentación saludable para todos</h3>
+                                <img class="hiddenDesktop" src="./img/svg/arrowOrange.svg" alt="" srcset="">
                             </div>
                             <div class="descripcion hiddenMobile">
                                 <p class="txtLight">
@@ -378,12 +372,15 @@
                 <div class="cardHorizontal">
                     <a href="">
                         <figure>
-                            <img src="./img/Mini-Rectangle.png" alt="">
+                            <img src="https://www.vitamina.cl/wp-content/uploads/2019/10/beneficio-colaboradores-07.png"
+                                alt="">
                         </figure>
                         <div class="contenido">
-                            <div class="title">
+                            <div class="title" style="display: flex;">
                                 <h3 class="orange txtMedium">
-                                    Integración con las familias </h3>
+                                    Integración con las familias
+                                </h3>
+                                <img class="hiddenDesktop" src="./img/svg/arrowOrange.svg" alt="" srcset="">
                             </div>
                             <div class="descripcion hiddenMobile">
                                 <p class="txtLight">
@@ -427,8 +424,7 @@
                     <div class="contenido">
                         <div class="title">
                             <h3 class="black txtLight">
-                                Toda mamá trabaja más tranquila al <b class="textBold">saber que sus hijos están
-                                    bien</b>
+                                Vitamina <b class="textBold">cumplió mis expectativas</b> y las superó
                             </h3>
                         </div>
                         <div class="descripcion">
@@ -448,8 +444,7 @@
                     <div class="contenido">
                         <div class="title">
                             <h3 class="black txtLight">
-                                Toda mamá trabaja más tranquila al <b class="textBold">saber que sus hijos están
-                                    bien</b>
+                                Lo volvería a elegir <b class="textBold">mil veces</b>
                             </h3>
                         </div>
                         <div class="descripcion">
@@ -471,9 +466,10 @@
                 </figure>
                 <div class="contenido">
                     <div class="title">
-                        <h3 class="txtLight">Toda mamá trabaja más tranquila <b class="txtBold">al saber que sus
-                                hijos
-                                están bien</b></h3>
+                        <h3 class="black txtLight">
+                            Toda mamá trabaja más tranquila al <b class="textBold">saber que sus hijos están
+                                bien</b>
+                        </h3>
                     </div>
                     <div class="nombre">
                         <h5 class="txtLight">Juanita Pérez</h5>
@@ -489,15 +485,33 @@
                 </figure>
                 <div class="contenido">
                     <div class="title">
-                        <h3 class="txtLight">Toda mamá trabaja más tranquila <b class="txtBold">al saber que sus
-                                hijos
-                                están bien</b></h3>
+                        <h3 class="black txtLight">
+                            Vitamina <b class="textBold">cumplió mis expectativas</b> y las superó
+                        </h3>
                     </div>
                     <div class="nombre">
                         <h5 class="txtLight">Juanita Pérez</h5>
                     </div>
                     <div class="lugar">
                         <h5><b>Vitamina Santiago Centro</b></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="./img/girl3.png" alt="">
+                </figure>
+                <div class="contenido">
+                    <div class="title">
+                        <h3 class="black txtLight">
+                            Lo volvería a elegir <b class="textBold">mil veces</b>
+                        </h3>
+                    </div>
+                    <div class="nombre">
+                        <h5 class="txtLight">Juanita Pérez</h5>
+                    </div>
+                    <div class="lugar">
+                        <h5><b>Vitamina Santiago Centro </b></h5>
                     </div>
                 </div>
             </div>
@@ -543,14 +557,13 @@
         </div>
         <div class="container">
             <div class="descripcion">
-                <p class="txtBold">Nuestro propósito es potenciar el talento de los niños y contribuir a impactar
-                    positivamente su futuro.
+                <p class="txtBold">Las madres y padres trabajadores se incorporan al mundo laboral con confianza y
+                    tranquilidad
                 </p>
-                <p class="txtLight">La educación es el gran catalizador del progreso de la humanidad. El futuro se
-                    construye hoy,
-                    sentando las bases a través de oportunidades de cuidado y aprendizaje de excelencia desde los
-                    primeros meses de vida. Vitamina se hace cargo de este desafío contribuyendo a formar las
-                    generaciones del futuro.</p>
+                <p class="txtLight">Además, aumenta el compromiso y motivación de sus equipos, reduciendo a la vez el
+                    ausentismo y la rotación, convirtiéndonos en el socio preferido de las mejores empresas para
+                    trabajar
+                </p>
             </div>
             <div class="boton">
                 <a href="" class="btn br-blue blue">Conocer más</a>
@@ -656,32 +669,32 @@
                 <div id="carousel-marcasMobile">
                     <div class="item">
                         <figure>
-                            <img src="./img/marcas/Bitmap.svg" alt="">
+                            <img src="./img/marcas/GOBIERNO.png" alt="">
                         </figure>
                     </div>
                     <div class="item">
                         <figure>
-                            <img src="./img/marcas/Bitmap2.svg" alt="">
+                            <img src="./img/marcas/STARBUCKS.png" alt="">
                         </figure>
                     </div>
                     <div class="item">
                         <figure>
-                            <img src="./img/marcas/Bitmap3.svg" alt="">
+                            <img src="./img/marcas/CLINICALASCONDES.png" alt="">
                         </figure>
                     </div>
                     <div class="item">
                         <figure>
-                            <img src="./img/marcas/Bitmap4.svg" alt="">
+                            <img src="./img/marcas/ENTEL.png" alt="">
                         </figure>
                     </div>
                     <div class="item">
                         <figure>
-                            <img src="./img/marcas/Bitmap5.svg" alt="">
+                            <img src="./img/marcas/MALLPLAZA.png" alt="">
                         </figure>
                     </div>
                     <div class="item">
                         <figure>
-                            <img src="./img/marcas/Bitmap6.svg" alt="">
+                            <img src="./img/marcas/LIDER.png" alt="">
                         </figure>
                     </div>
                 </div>
@@ -899,7 +912,10 @@
                             habilidades, desde
                             Educación hasta Liderazgo.
                         </p>
-                        <a href="" class="hiddenDesktop">Lorem Ipsum</a>
+                        <a href="" class="hiddenDesktop">
+                            Lorem Ipsum
+                            <img class="hiddenDesktop" src="./img/svg/arrowGreen.svg" alt="" srcset="">
+                        </a>
                     </div>
                 </div>
                 <div class="card3">
@@ -909,7 +925,10 @@
                     <div class="content">
                         <p class="hiddenMobile">Un lugar entretenido, donde lo pasamos bien trabajando.
                         </p>
-                        <a href="" class="hiddenDesktop">Lorem Ipsum</a>
+                        <a href="" class="hiddenDesktop">
+                            Lorem Ipsum
+                            <img class="hiddenDesktop" src="./img/svg/arrowGreen.svg" alt="" srcset="">
+                        </a>
                     </div>
                 </div>
                 <div class="card3">
@@ -920,7 +939,10 @@
                         <p class="hiddenMobile">Plan de carrera diseñado para ir acompañándote en tu crecimiento
                             profesional.
                         </p>
-                        <a href="" class="hiddenDesktop">Lorem Ipsum</a>
+                        <a href="" class="hiddenDesktop">
+                            Lorem Ipsum
+                            <img class="hiddenDesktop" src="./img/svg/arrowGreen.svg" alt="" srcset="">
+                        </a>
                     </div>
                 </div>
                 <div class="card3">
@@ -932,7 +954,10 @@
                             de Vitamina hasta los
                             4 años.
                         </p>
-                        <a href="" class="hiddenDesktop">Lorem Ipsum</a>
+                        <a href="" class="hiddenDesktop">
+                            Lorem Ipsum
+                            <img class="hiddenDesktop" src="./img/svg/arrowGreen.svg" alt="" srcset="">
+                        </a>
                     </div>
                 </div>
                 <div class="card3">
@@ -942,7 +967,9 @@
                     <div class="content">
                         <p class="hiddenMobile">Reconocemos el trabajo bien hecho, destacando el buen desempeño.
                         </p>
-                        <a href="" class="hiddenDesktop">Lorem Ipsum</a>
+                        <a href="" class="hiddenDesktop">Lorem Ipsum
+                            <img class="hiddenDesktop" src="./img/svg/arrowGreen.svg" alt="" srcset="">
+                        </a>
                     </div>
                 </div>
                 <div class="card3">
@@ -952,7 +979,9 @@
                     <div class="content">
                         <p class="hiddenMobile">Reconocemos el trabajo bien hecho, destacando el buen desempeño.
                         </p>
-                        <a href="" class="hiddenDesktop">Lorem Ipsum</a>
+                        <a href="" class="hiddenDesktop">Lorem Ipsum
+                            <img class="hiddenDesktop" src="./img/svg/arrowGreen.svg" alt="" srcset="">
+                        </a>
                     </div>
                 </div>
 
@@ -1072,19 +1101,17 @@
     <!-- FOOTER  -->
     <div class="footer hiddenMobile">
         <div class="item">
-            <a href="">Nuestro servicio</a>
+            <a href="nuestro-servicio.html">Nuestro servicio</a>
         </div>
         <div class="item">
-            <a href="">Quienes somos</a>
+            <a href="quienes-somos.html">Quienes somos</a>
+        </div>
+
+        <div class="item">
+            <a href="donde-estamos.html">Dónde estamos</a>
         </div>
         <div class="item">
-            <a href="">Cómo educamos</a>
-        </div>
-        <div class="item">
-            <a href="">Dónde estamos</a>
-        </div>
-        <div class="item">
-            <a href="">Contacto</a>
+            <a href="contacto.html">Contacto</a>
         </div>
     </div>
     <div class="footer hiddenDesktop">
@@ -1095,38 +1122,40 @@
             <a href="" class="txtLight">Nuestro servicio</a>
             <ul>
                 <li>
-                    <a href="">Para la familia</a>
+                    <a href="nuestro-servicio.html">Para la familia</a>
                 </li>
                 <li>
-                    <a href="">Para las empresas</a>
+                    <a href="nuestro-servicio.html">Para las empresas</a>
                 </li>
                 <li>
-                    <a href="">Para las educadores</a>
+                    <a href="nuestro-servicio.html">Para las educadores</a>
                 </li>
             </ul>
         </div>
         <div class="item itemUbicacion">
-            <a href="" class="txtLight">Chile </a>
-            <a class="txtLight dropdownUbicacion">Cambiar ubicación</a>
+            <a href="donde-estamos.html" class="txtLight">Chile </a>
+            <!-- <a class="txtLight dropdownUbicacion">Cambiar país</a>
             <ul class="hiddenMobile">
-                <li><a href="">Chile</a></li>
-                <li><a href="">Brazil</a></li>
-                <li><a href="">Peru</a></li>
-                <li><a href="">Colombia</a></li>
-            </ul>
+                <li><a href="donde-estamos.html">Chile</a></li>
+                <li><a href="donde-estamos.html">Brazil</a></li>
+                <li><a href="donde-estamos.html">Peru</a></li>
+                <li><a href="donde-estamos.html">Colombia</a></li>
+            </ul> -->
         </div>
         <div class="item">
-            <a href="" class="txtLight">Contacto</a>
+            <img src="./img/svg/mailblue.svg" alt="">
+            <a href="contacto.html" class="txtLight">Contacto</a>
         </div>
     </div>
     <footer>
         <div class="social">
-            <a href=""><img src="./img/svg/facebook.svg" alt=""></a>
-            <a href=""><img src="./img/svg/linkedin.svg" alt=""></a>
-            <a href=""><img src="./img/svg/instagram.svg" alt=""></a>
-            <a href=""><img src="./img/svg/Youtube.svg" alt=""></a>
+            <a href="https://www.facebook.com/vitamina.cl"><img src="./img/svg/facebook.svg" alt=""></a>
+            <a href="https://www.linkedin.com/company/vitamina-work-life/"><img src="./img/svg/linkedin.svg" alt=""></a>
+            <a href="https://www.instagram.com/vitamina.cl"><img src="./img/svg/instagram.svg" alt=""></a>
+            <a href="https://www.youtube.com/channel/UCqW6etfPv9PkkXZHA3mb84Q"><img src="./img/svg/Youtube.svg"
+                    alt=""></a>
         </div>
-        <figure><a href=""><img src="./img/svg/logo_vitamina_blanco.svg" alt=""></a></figure>
+        <figure><a href="index.html"><img src="./img/svg/logo_vitamina_blanco.svg" alt=""></a></figure>
     </footer>
     <!--END FOOTER  -->
 

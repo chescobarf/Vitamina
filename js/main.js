@@ -116,7 +116,7 @@ $('.carousel-comentarios3').slick({
 $('#carousel-marcasMobile').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 1500,
     cssEase: 'ease',
     dots: false,
@@ -169,3 +169,76 @@ $('.dropdownUbicacion').click(function () {
     $(this).next().slideToggle();
     $(this).toggleClass('rotate')
 })
+
+$('.search').click(function () {
+    console.log('click');
+    $('.buscador').slideToggle("fast").css("display", "inline-block");
+
+})
+
+
+
+
+//MAP
+const centros = ['CL', 'BR']
+$(function () {
+    $('#latinamerica-map').vectorMap({
+        map: 'south_america_mill',
+        backgroundColor: '#ffffff',
+        regionStyle: {
+            initial: {
+                fill: '#e8e8e8',
+                "fill-opacity": 1,
+                stroke: '#aaa',
+                "stroke-width": 2,
+                "stroke-opacity": 0.7
+            },
+            hover: {
+                "fill-opacity": 0.8,
+                cursor: 'pointer'
+            },
+        },
+        series: {
+            regions: [{
+                scale: {
+                    orange: '#FF5700',
+                    grey: '#959595'
+                },
+                attribute: 'fill',
+                values: {
+                    "CL": 'orange',
+                    "BR": 'orange',
+                    "CO": 'grey',
+                    "PE": 'grey',
+                }
+            }]
+        },
+        onRegionTipShow: function (event, label) {
+            if (label.html() == "Chile") {
+                label.html(
+                    '<b>' + label.html() + '</b></br>' +
+                    '<b>Desde 2006</b>'
+                );
+            } else
+            if (label.html() == "Brazil") {
+                label.html(
+                    '<b>' + label.html() + '</b></br>' +
+                    '<b>Desde 2020</b>'
+                );
+            } else {
+                label.html(
+                    '<b>' + label.html() + '</b></br>' +
+                    '<b>Proximamente</b>'
+                );
+            }
+        },
+        onRegionClick: function (event, code) {
+            var existe = centros.includes(code);
+            if (existe) {
+                window.location.href = "donde-estamos-" + code + ".html";
+            } else {
+                window.location.href = "donde-estamos-proximamente.html";
+            }
+        }
+    });
+});
